@@ -222,6 +222,11 @@ footer .footer-inner .footer-nav a:hover {
   opacity: 0.8;
 }
 
+.message-vb form button:hover {
+  background-color: var(--orange-vb-80) !important;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
 :root {
   --blue-vb: #2d5773;
   --purple-vb: #d9799e;
