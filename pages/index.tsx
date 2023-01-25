@@ -1,15 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../components/organisms/Navbar";
-import Layout from "../components/organisms/Layout";
-import Header from "../components/organisms/Header";
+import Footer from "../components/organisms/Footer";
+import HomeVb from "../components/organisms/HomeVb";
 
 export default function Home() {
   return (
     <>
-      <Layout bgColor="blue-vb">
-        <Header />
-      </Layout>
+      <div className="page bg-blue-vb">
+        <Navbar activeMenu="home" bgNavbar="navbar-blue-vb-bg" />
+        <main className="content">
+          <div className="mx-auto">
+            <HomeVb />
+          </div>
+        </main>
+        <Footer bgFooter="bg-blue-vb-80" />
+      </div>
     </>
   );
 }

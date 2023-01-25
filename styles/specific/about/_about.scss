@@ -1,0 +1,23 @@
+@media (min-width: 1400px) {
+  .about-vb-left {
+    padding-left: 220px;
+    h1,
+    h5 {
+      width: max-content;
+    }
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .about-vb-left {
+    padding-left: 230px;
+    h1,
+    h5 {
+      width: max-content;
+    }
+  }
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  .about-vb-left {
+    padding-left: 190px;
+  }
+}

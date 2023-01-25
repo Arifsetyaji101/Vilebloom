@@ -1,21 +1,21 @@
 import Link from "next/link";
-import { title } from "process";
+
+import cx from "classnames";
 
 interface NavItemProps {
   href: string;
   title: string;
+  active?: boolean;
 }
 export default function NavItem(props: NavItemProps) {
-  const { href = "/", title } = props;
+  const { href = "/", title, active } = props;
+  const activeClass = cx({
+    "nav-link meltow-100 text-lg gray-vb px-4": true,
+    active: active,
+  });
   return (
-    <li>
-      <Link
-        href={href}
-        className="block py-2 pl-3 pr-4 rounded md:bg-transparent md:text-blue-700 md:p-0 text-gray-vb dark:text-gray-vb"
-        aria-current="page"
-      >
-        {title}
-      </Link>
-    </li>
+    <Link className={activeClass} aria-current="page" href={href}>
+      {title}
+    </Link>
   );
 }

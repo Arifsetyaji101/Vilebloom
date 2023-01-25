@@ -1,0 +1,20 @@
+.navbar {
+  backdrop-filter: blur(5px);
+}
+
+.navbar-blue-vb-bg {
+  background-color: rgba(45, 87, 115, 0.5) !important;
+}
+.navbar-blue-vb-80-bg {
+  background-color: rgba(57, 112, 148, 0.5) !important;
+}
+
+.nav-link {
+  &:hover {
+    color: var(--pink-vb-80) !important;
+  }
+  &.active {
+    color: var(--pink-vb-80) !important;
+    text-decoration: underline;
+  }
+}

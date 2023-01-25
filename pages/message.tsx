@@ -1,17 +1,15 @@
 import Footer from "../components/organisms/Footer";
-import Layout from "../components/organisms/Layout";
-import Image from "next/image";
+import MessageVb from "../components/organisms/MessageVb";
 import Navbar from "../components/organisms/Navbar";
-import AboutVb from "../components/organisms/AboutVb";
 
-export default function About() {
+export default function Message() {
   return (
     <>
       <div className="page bg-blue-vb-80">
-        <Navbar activeMenu="about" bgNavbar="navbar-blue-vb-80-bg" />
+        <Navbar activeMenu="message" bgNavbar="navbar-blue-vb-80-bg" />
         <main className="content">
           <div className="mx-auto">
-            <AboutVb />
+            <MessageVb />
           </div>
         </main>
         <Footer bgFooter="bg-blue-vb" />

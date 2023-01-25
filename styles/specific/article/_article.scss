@@ -1,0 +1,9 @@
+.article-vb {
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      opacity: 0.8;
+    }
+  }
+}

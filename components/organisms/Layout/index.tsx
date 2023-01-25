@@ -20,13 +20,7 @@ export default function Layout(props: LayoutProps) {
   const { children, bgColor } = props;
   return (
     <>
-      <div className="page">
-        <Navbar />
-        <main className={`content bg-${bgColor}`}>
-          <div className="container mx-auto">{children}</div>
-        </main>
-      </div>
-      ;
+      <div className="page">{children}</div>
     </>
   );
 }
