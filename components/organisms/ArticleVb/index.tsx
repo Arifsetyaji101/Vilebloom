@@ -7,7 +7,7 @@ export default function ArticleVb() {
     <>
       <section className="article-vb pt-sm-5 pt-0 pb-3">
         <div className="container">
-          <div className="title meltow-200 title display-base gray-vb">
+          <div className="title alegreya-sc-200 title display-base gray-vb">
             Writings
           </div>
           <ArticleVbItem

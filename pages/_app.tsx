@@ -1,7 +1,5 @@
 import Head from "next/head";
 import type { AppProps } from "next/app";
-import { useRouter } from "next/router";
-import { useEffect } from "react";
 
 import Favicon from "../components/atoms/Favicon";
 
@@ -22,6 +20,19 @@ export default function App({ Component, pageProps }: AppProps) {
           integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
           crossOrigin="anonymous"
         />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap"
+          rel="stylesheet"
+        ></link>
+        <Favicon type="light" />
+
         <script
           src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
           integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -32,29 +43,6 @@ export default function App({ Component, pageProps }: AppProps) {
           integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
           crossOrigin="anonymous"
         ></script>
-        {/* font */}
-        <link
-          rel="preload"
-          href="/meltow-font/MeltowSan100-Rust.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        ></link>
-        <link
-          rel="preload"
-          href="/meltow-font/MeltowSan200-Rust.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        ></link>
-        <link
-          rel="preload"
-          href="/meltow-font/MeltowSan300-Rust.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        ></link>
-        <Favicon type="light" />
       </Head>
       <Component {...pageProps} />
     </>

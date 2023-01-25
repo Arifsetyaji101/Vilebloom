@@ -9,7 +9,9 @@ export default function FooterList(props: FooterListProps) {
   const { title, href = "/" } = props;
   return (
     <Link
-      className="gray-vb text-md meltow-100 px-2"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="gray-vb text-md alegreya-sc-100 px-2"
       aria-current="page"
       href={href}
     >

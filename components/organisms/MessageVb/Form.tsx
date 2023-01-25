@@ -36,8 +36,11 @@ const Form: NextPage = () => {
   return (
     <>
       <form className="py-4" onSubmit={handleSubmit}>
+        <div className="text-center mx-auto text-lg gray-vb alegreya-sc-100">
+          !!! Sedang Dalam Perbaikan !!!
+        </div>
         <div className="mb-3">
-          <label htmlFor="name" className="form-label gray-vb meltow-100">
+          <label htmlFor="name" className="form-label gray-vb alegreya-sc-100">
             Name
           </label>
           <input
@@ -46,13 +49,14 @@ const Form: NextPage = () => {
             type="text"
             name="name"
             id="name"
-            className="form-control meltow-100"
+            className="form-control alegreya-sc-100"
             placeholder="Nama Kamu"
             required
+            disabled
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="email" className="form-label gray-vb meltow-100">
+          <label htmlFor="email" className="form-label gray-vb alegreya-sc-100">
             Email
           </label>
           <input
@@ -61,27 +65,33 @@ const Form: NextPage = () => {
             type="email"
             name="email"
             id="email"
-            className="form-control meltow-100"
+            className="form-control alegreya-sc-100"
             placeholder="Email Kamu"
+            disabled
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="message" className="form-label gray-vb meltow-100">
+          <label
+            htmlFor="message"
+            className="form-label gray-vb alegreya-sc-100"
+          >
             Message
           </label>
           <textarea
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             id="message"
-            className="form-control meltow-100"
+            className="form-control alegreya-sc-100"
             placeholder="Jangan Spam Yakk!"
             required
+            disabled
           />
         </div>
         <div className="d-flex align-items-center justify-content-center">
           <button
             type="submit"
-            className="py-2 px-5 bg-orange-vb border-0 mb-4 mb-lg-0 rounded-5 meltow-200 blue-vb"
+            disabled
+            className="py-2 px-5 bg-orange-vb border-0 mb-4 mb-lg-0 rounded-5 alegreya-sc-200 blue-vb"
           >
             Submit
           </button>

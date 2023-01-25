@@ -15,18 +15,33 @@ export default function Footer(props: FooterProps) {
     >
       <div className="container">
         <div className="footer-inner">
-          <div className="meltow-200 title position-absolute display-base gray-vb d-none d-lg-block">
+          <div className="alegreya-sc-200 title position-absolute display-base gray-vb d-none d-lg-block">
             Contact
           </div>
           <div className="footer-nav">
             <div className="d-flex flex-wrap justify-content-center align-items-center">
-              <FooterList title="Github" href="/" />
-              <FooterList title="LinkedIn" href="/" />
-              <FooterList title="Youtube" href="/" />
-              <FooterList title="Email" href="/" />
-              <FooterList title="instagram" href="/" />
-              <FooterList title="Resume" href="/" />
-              <FooterList title="Timeline" href="/" />
+              <FooterList
+                title="Github"
+                href="https://github.com/Arifsetyaji101"
+              />
+              <FooterList
+                title="LinkedIn"
+                href="https://www.linkedin.com/in/arifsetyaji101"
+              />
+              <FooterList
+                title="Youtube"
+                href="https://www.youtube.com/@arifsetyaji62"
+              />
+              <FooterList
+                title="Email"
+                href="mailto:arifsetyaji101@gmail.com"
+              />
+              <FooterList
+                title="instagram"
+                href="https://www.instagram.com/arifsetyaji_"
+              />
+              <FooterList title="Resume" href="#" />
+              <FooterList title="Timeline" href="#" />
             </div>
           </div>
         </div>
