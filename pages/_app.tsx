@@ -1,13 +1,24 @@
 import Head from "next/head";
 import type { AppProps } from "next/app";
+import Script from "next/script";
+
+// import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.css";
 
 import Favicon from "../components/atoms/Favicon";
-
-import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/style.css";
 import "../styles/global.css";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
+  // fix error js bootstrap
+  // const router = useRouter();
+  // useEffect(() => {
+  //   typeof document !== undefined
+  //     ? require("bootstrap/dist/js/bootstrap")
+  //     : null;
+  // }, [router.events]);
   return (
     <>
       <Head>
@@ -21,7 +32,7 @@ export default function App({ Component, pageProps }: AppProps) {
           integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
           crossOrigin="anonymous"
         />
-        <link
+        {/* <link
           rel="preload"
           href="/meltow-font/MeltowSan100-Rust.woff2"
           as="font"
@@ -41,7 +52,7 @@ export default function App({ Component, pageProps }: AppProps) {
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
-        ></link>
+        ></link> */}
         <Favicon type="light" />
 
         <script
@@ -54,6 +65,11 @@ export default function App({ Component, pageProps }: AppProps) {
           integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
           crossOrigin="anonymous"
         ></script>
+        {/* <Script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+          crossOrigin="anonymous"
+        ></Script> */}
       </Head>
       <Component {...pageProps} />
     </>

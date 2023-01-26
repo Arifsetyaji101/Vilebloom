@@ -19,7 +19,7 @@ export default function Footer(props: FooterProps) {
             Contact
           </div>
           <div className="footer-nav">
-            <div className="d-flex flex-wrap justify-content-center align-items-center">
+            <div className="d-flex flex-wrap justify-content-md-center align-items-md-center">
               <FooterList
                 title="Github"
                 href="https://github.com/Arifsetyaji101"

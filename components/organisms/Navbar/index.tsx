@@ -50,6 +50,47 @@ export default function Navbar(props: NavbarProps) {
             </div>
           </div>
         </nav>
+
+        {/* Navbar Mobile */}
+        <nav className="navbar navbar-expand-lg d-sm-none d-sm-block fixed-top">
+          <div className="container">
+            <button
+              className="navbar-toggler border-0 mx-auto"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              style={{ color: "transparent" }}
+            >
+              <Image src="/logo-light.svg" width={50} height={50} alt="Logo" />
+            </button>
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
+              <ul className="navbar-nav text-center mb-2 mb-lg-0">
+                <NavItem title="Home" href="/" active={activeMenu === "home"} />
+                <NavItem
+                  title="About"
+                  href="/about"
+                  active={activeMenu === "about"}
+                />
+                <NavItem
+                  title="Article"
+                  href="/article"
+                  active={activeMenu === "article"}
+                />
+                <NavItem
+                  title="Message"
+                  href="/message"
+                  active={activeMenu === "message"}
+                />
+              </ul>
+            </div>
+          </div>
+        </nav>
       </header>
     </>
   );

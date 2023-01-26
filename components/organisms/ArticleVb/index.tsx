@@ -11,24 +11,9 @@ export default function ArticleVb() {
             Writings
           </div>
           <ArticleVbItem
-            href="/"
-            time="Senin, 1 Januari 2023 at 12:00"
-            title="Pertama kali aku menulis sebuah artikel di website yang aku
-                  kembangkan sendiri"
-            desc="Artikel yang akan kutulis ini tentang diriku"
-          />
-          <ArticleVbItem
-            href="/"
-            time="Senin, 1 Januari 2023 at 12:00"
-            title="Pertama kali aku menulis sebuah artikel di website yang aku
-                  kembangkan sendiri"
-            desc="Artikel yang akan kutulis ini tentang diriku"
-          />
-          <ArticleVbItem
-            href="/"
-            time="Senin, 1 Januari 2023 at 12:00"
-            title="Pertama kali aku menulis sebuah artikel di website yang aku
-                  kembangkan sendiri"
+            href="/article-page"
+            time="Kamis, 26 Januari 2023 at 13:00"
+            title="Hello World!"
             desc="Artikel yang akan kutulis ini tentang diriku"
           />
         </div>

@@ -88,7 +88,7 @@
 
 .meltow-300 {
   font-family: "Meltow Sans 300 Rust";
-  line-height: 0.9;
+  line-height: 0.9 !important;
 }
 
 .display-2xl {
@@ -144,6 +144,10 @@ main {
   min-height: 97vh;
 }
 
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3) !important;
+}
+
 .navbar {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -175,11 +179,37 @@ footer .title {
 footer .footer-inner .footer-nav {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: auto;
+  transform: translateY(-50%);
 }
 footer .footer-inner .footer-nav a:hover {
   color: var(--pink-vb-80);
+}
+
+@media (max-width: 991px) {
+  footer {
+    height: 150px !important;
+  }
+  footer .footer-inner .footer-nav a {
+    padding: 0 10px 10px 0;
+  }
+}
+@media (min-width: 767px) {
+  footer {
+    height: 150px !important;
+  }
+  footer .footer-inner .footer-nav {
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+  }
+}
+button.bg-orange-vb:hover {
+  background-color: var(--orange-vb-80) !important;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+button.bg-gray-vb:hover {
+  background-color: var(--neutral) !important;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
 @media (min-width: 1200px) {
@@ -220,11 +250,6 @@ footer .footer-inner .footer-nav a:hover {
 .article-vb a:hover {
   text-decoration: none;
   opacity: 0.8;
-}
-
-.message-vb form button:hover {
-  background-color: var(--orange-vb-80) !important;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
 :root {

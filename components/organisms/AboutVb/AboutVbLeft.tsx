@@ -15,7 +15,7 @@ export default function AboutVbLeft() {
             action="https://drive.google.com/file/d/1r1pkerzdyFtUS7BQMygxXsMiZ9-9DXA3/view?usp=share_link"
             target="_blank"
           >
-            <button className="py-2 px-3 bg-gray-vb border-0 mb-4 mb-lg-0 rounded-5 meltow-200 blue-vb-80">
+            <button className="shadow py-2 px-3 bg-gray-vb border-0 mb-4 mb-lg-0 rounded-5 meltow-200 blue-vb-80">
               My CV
             </button>
           </form>

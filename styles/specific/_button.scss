@@ -1,0 +1,16 @@
+button {
+  &.bg-orange-vb {
+    &:hover {
+      background-color: var(--orange-vb-80) !important;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out;
+    }
+  }
+  &.bg-gray-vb {
+    &:hover {
+      background-color: var(--neutral) !important;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out;
+    }
+  }
+}

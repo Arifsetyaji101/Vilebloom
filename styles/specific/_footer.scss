@@ -10,12 +10,36 @@ footer {
     .footer-nav {
       position: absolute;
       top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      left: auto;
+      transform: translateY(-50%);
       a {
         &:hover {
           color: var(--pink-vb-80);
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  footer {
+    height: 150px !important;
+    .footer-inner {
+      .footer-nav {
+        a {
+          padding: 0 10px 10px 0;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 767px) {
+  footer {
+    height: 150px !important;
+    .footer-inner {
+      .footer-nav {
+        left: 50%;
+        transform: translate(-50%, -50%) !important;
       }
     }
   }

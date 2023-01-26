@@ -88,7 +88,7 @@ const Form: NextPage = () => {
           <button
             type="submit"
             disabled
-            className="py-2 px-5 bg-orange-vb border-0 mb-4 mb-lg-0 rounded-5 meltow-200 blue-vb"
+            className="shadow py-2 px-5 bg-orange-vb border-0 mb-4 mb-lg-0 rounded-5 meltow-200 blue-vb"
           >
             Submit
           </button>
