@@ -22,21 +22,21 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <link
           rel="preload"
-          href="/meltow-font/MeltowSan100-Rust.woff2"
+          href="{{'/meltow-font/MeltowSan100-Rust.woff2'}}"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
         ></link>
         <link
           rel="preload"
-          href="/meltow-font/MeltowSan200-Rust.woff2"
+          href="{{'/meltow-font/MeltowSan200-Rust.woff2'}}"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
         ></link>
         <link
           rel="preload"
-          href="/meltow-font/MeltowSan300-Rust.woff2"
+          href="{{'/meltow-font/MeltowSan300-Rust.woff2'}}"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
