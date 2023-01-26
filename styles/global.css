@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Meltow Sans 100 Rust";
+  src: url("../public/meltow-font/MeltowSan100-Rust.ttf");
+}
+@font-face {
+  font-family: "Meltow Sans 200 Rust";
+  src: url("../public/meltow-font/MeltowSan200-Rust.ttf");
+}
+@font-face {
+  font-family: "Meltow Sans 300 Rust";
+  src: url("../public/meltow-font/MeltowSan300-Rust.ttf");
+}
