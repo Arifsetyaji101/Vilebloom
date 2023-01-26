@@ -9,7 +9,7 @@ export default function Footer(props: FooterProps) {
     <footer
       className={bgFooter}
       style={{
-        height: "100px",
+        height: "80px",
       }}
       id="Contact"
     >

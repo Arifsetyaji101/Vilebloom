@@ -21,9 +21,13 @@ footer {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 575px) {
   footer {
     height: 150px !important;
+  }
+}
+@media (max-width: 991px) {
+  footer {
     .footer-inner {
       .footer-nav {
         a {
@@ -35,7 +39,6 @@ footer {
 }
 @media (min-width: 767px) {
   footer {
-    height: 150px !important;
     .footer-inner {
       .footer-nav {
         left: 50%;

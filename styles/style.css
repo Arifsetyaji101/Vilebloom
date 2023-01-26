@@ -186,18 +186,17 @@ footer .footer-inner .footer-nav a:hover {
   color: var(--pink-vb-80);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 575px) {
   footer {
     height: 150px !important;
   }
+}
+@media (max-width: 991px) {
   footer .footer-inner .footer-nav a {
     padding: 0 10px 10px 0;
   }
 }
 @media (min-width: 767px) {
-  footer {
-    height: 150px !important;
-  }
   footer .footer-inner .footer-nav {
     left: 50%;
     transform: translate(-50%, -50%) !important;
