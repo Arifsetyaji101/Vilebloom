@@ -11,7 +11,7 @@ export default function FooterList(props: FooterListProps) {
     <Link
       target="_blank"
       rel="noopener noreferrer"
-      className="gray-vb text-md alegreya-sc-100 px-2"
+      className="gray-vb text-md meltow-100 px-2"
       aria-current="page"
       href={href}
     >

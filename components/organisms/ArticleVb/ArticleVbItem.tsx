@@ -14,13 +14,11 @@ export default function ArticleVbItem(props: ArticleVbItemProps) {
     <Link href={href}>
       <div className="article-card bg-blue-vb-80 p-2 rounded-4 mt-3 d-flex align-items-center">
         <div className="article-inner">
-          <div className="time alegreya-sc-100 orange-vb-80 text-lg">
-            {time}
-          </div>
-          <div className="title-article display-base gray-vb alegreya-sc-300">
+          <div className="time meltow-100 orange-vb-80 text-lg">{time}</div>
+          <div className="title-article display-base gray-vb meltow-300">
             {title}
           </div>
-          <div className="desc-article orange-vb-80 text-lg alegreya-sc-200">
+          <div className="desc-article orange-vb-80 text-lg meltow-200">
             {desc}
           </div>
         </div>

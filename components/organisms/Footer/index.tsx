@@ -15,7 +15,7 @@ export default function Footer(props: FooterProps) {
     >
       <div className="container">
         <div className="footer-inner">
-          <div className="alegreya-sc-200 title position-absolute display-base gray-vb d-none d-lg-block">
+          <div className="meltow-200 title position-absolute display-base gray-vb d-none d-lg-block">
             Contact
           </div>
           <div className="footer-nav">
