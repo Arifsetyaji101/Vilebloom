@@ -11,7 +11,11 @@ export default function HomeVb() {
             <HomeVbLeft />
 
             <div className="col-lg-2">
-              <div className="home-vb-middle">
+              <div
+                className="home-vb-middle"
+                data-aos="zoom-out"
+                data-aos-duration="3000"
+              >
                 <Image
                   src="/assets/images/vilebloom-2.png"
                   width={194}
