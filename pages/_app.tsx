@@ -20,16 +20,26 @@ export default function App({ Component, pageProps }: AppProps) {
           integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
           crossOrigin="anonymous"
         />
-
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
+          rel="preload"
+          href="/meltow-font/MeltowSan100-Rust.woff2"
+          as="font"
+          type="font/woff2"
           crossOrigin="anonymous"
-        />
+        ></link>
         <link
-          href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap"
-          rel="stylesheet"
+          rel="preload"
+          href="/meltow-font/MeltowSan200-Rust.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        ></link>
+        <link
+          rel="preload"
+          href="/meltow-font/MeltowSan300-Rust.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
         ></link>
         <Favicon type="light" />
 
