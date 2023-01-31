@@ -11,7 +11,6 @@ export default function Footer(props: FooterProps) {
       style={{
         height: "80px",
       }}
-      id="Contact"
     >
       <div className="container">
         <div className="footer-inner">

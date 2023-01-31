@@ -1,8 +1,17 @@
-import Image from "next/image";
-import Link from "next/link";
+import { ArticleListTypes } from "../../../services/data-types";
 import ArticleVbItem from "./ArticleVbItem";
+import { useCallback, useEffect, useState } from "react";
+import { getArticle } from "../../../services/article";
 
 export default function ArticleVb() {
+  const [articleList, setArticleList] = useState([]);
+  const getFeatureArticleList = useCallback(async () => {
+    const data = await getArticle();
+    setArticleList(data);
+  }, [getArticle]);
+  useEffect(() => {
+    getFeatureArticleList();
+  }, []);
   return (
     <>
       <section className="article-vb pt-sm-5 pt-0 pb-3">
@@ -10,12 +19,17 @@ export default function ArticleVb() {
           <div className="title meltow-200 title display-base gray-vb">
             Writings
           </div>
-          <ArticleVbItem
-            href="/article-page"
-            time="Kamis, 26 Januari 2023 at 13:00"
-            title="Hello World!"
-            desc="Artikel yang akan kutulis ini tentang diriku"
-          />
+          {articleList.map((item: ArticleListTypes) => {
+            return (
+              <ArticleVbItem
+                key={item.id}
+                title={item.attributes.title}
+                time={item.attributes.publishedAt}
+                id={item.id}
+                desc={item.attributes.content}
+              />
+            );
+          })}
         </div>
       </section>
     </>

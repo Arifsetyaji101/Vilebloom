@@ -1,6 +1,6 @@
-import ArticleVb from "../components/organisms/ArticleVb";
-import Footer from "../components/organisms/Footer";
-import Navbar from "../components/organisms/Navbar";
+import ArticleVb from "../../components/organisms/ArticleVb";
+import Footer from "../../components/organisms/Footer";
+import Navbar from "../../components/organisms/Navbar";
 
 export default function Article() {
   return (
