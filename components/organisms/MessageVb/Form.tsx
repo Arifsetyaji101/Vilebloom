@@ -36,9 +36,6 @@ const Form: NextPage = () => {
   return (
     <>
       <form className="py-4" onSubmit={handleSubmit}>
-        <div className="text-center mx-auto text-lg gray-vb meltow-100">
-          !!! Sedang Dalam Perbaikan !!!
-        </div>
         <div className="mb-3">
           <label htmlFor="name" className="form-label gray-vb meltow-100">
             Name
