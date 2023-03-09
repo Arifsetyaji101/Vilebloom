@@ -53,6 +53,25 @@ export default function Navbar(props: NavbarProps) {
 
         {/* Navbar Mobile */}
         <nav className="navbar navbar-expand-lg d-sm-none d-sm-block fixed-top">
+          <div
+            className="w-100 d-flex justify-content-center align-items-center alert alert-light alert-dismissible fade show"
+            role="alert"
+            style={{
+              height: 40,
+            }}
+          >
+            Click Logo for Menu!
+            <button
+              type="button"
+              className="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+              style={{
+                height: 0,
+              }}
+            ></button>
+          </div>
+
           <div className="container">
             <button
               className="navbar-toggler border-0 mx-auto"

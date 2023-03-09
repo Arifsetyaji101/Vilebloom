@@ -1,3 +1,4 @@
+@import "./specific/logo/logo.css";
 .bg-blue-vb {
   background-color: #2d5773;
 }
@@ -221,8 +222,7 @@ button.bg-gray-vb:hover {
     padding-left: 220px;
   }
   .about-vb-left h1,
-.about-vb-left h5 {
-    width: -webkit-max-content;
+  .about-vb-left h5 {
     width: -moz-max-content;
     width: max-content;
   }
@@ -232,8 +232,7 @@ button.bg-gray-vb:hover {
     padding-left: 230px;
   }
   .about-vb-left h1,
-.about-vb-left h5 {
-    width: -webkit-max-content;
+  .about-vb-left h5 {
     width: -moz-max-content;
     width: max-content;
   }
