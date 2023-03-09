@@ -52,7 +52,6 @@ const Form: NextPage = () => {
             className="form-control meltow-100"
             placeholder="Nama Kamu"
             required
-            disabled
           />
         </div>
         <div className="mb-3">
@@ -67,7 +66,6 @@ const Form: NextPage = () => {
             id="email"
             className="form-control meltow-100"
             placeholder="Email Kamu"
-            disabled
           />
         </div>
         <div className="mb-3">
@@ -81,13 +79,11 @@ const Form: NextPage = () => {
             className="form-control meltow-100"
             placeholder="Jangan Spam Yakk!"
             required
-            disabled
           />
         </div>
         <div className="d-flex align-items-center justify-content-center">
           <button
             type="submit"
-            disabled
             className="shadow py-2 px-5 bg-orange-vb border-0 mb-4 mb-lg-0 rounded-5 meltow-200 blue-vb"
           >
             Submit
