@@ -70,8 +70,8 @@ export default function App({ Component, pageProps }: AppProps) {
           integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
           crossOrigin="anonymous"
         ></Script> */}
-      </Head>
-       {/*
+
+         {/*
         <!-- Google tag (gtag.js) -->
        */}
      
@@ -83,6 +83,8 @@ export default function App({ Component, pageProps }: AppProps) {
 
   gtag('config', 'G-W43P8VMD53');
 </script>
+      </Head>
+      
       <Component {...pageProps} />
     </>
   );
