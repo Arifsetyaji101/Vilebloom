@@ -73,7 +73,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
          {/*
         <!-- Google tag (gtag.js) -->
-       */}
+       
      
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-W43P8VMD53"></script>
 <script>
@@ -83,6 +83,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   gtag('config', 'G-W43P8VMD53');
 </script>
+*/}
       </Head>
       
       <Component {...pageProps} />
